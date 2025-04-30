@@ -18,10 +18,11 @@ pip install paramiko
 ```
 
 2.	Edit the script to specify:
+   
 •	Target IP address
 •	Path to your username wordlist
 
-3.	Run it:
+4.	Run it:
 ```
 python ssh_enum.py
 ```
