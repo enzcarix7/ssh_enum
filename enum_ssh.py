@@ -1,7 +1,7 @@
 from paramiko import SSHClient, AuthenticationException, SSHException, AutoAddPolicy
 from time import sleep
 
-def ssh_enumerate(ip: str, username_list: str, port: int = 22) -> list[str]:
+def ssh_enumerate(ip: str, username_list: str, port: int = 22) -> list[str]: #Default port 22
     ssh_client: SSHClient = SSHClient()
     ssh_client.set_missing_host_key_policy(AutoAddPolicy())
     result: list[str] = []
@@ -32,4 +32,5 @@ def ssh_enumerate(ip: str, username_list: str, port: int = 22) -> list[str]:
     return result
 
 user_path: str = r'wlist/path' #replace w wlist
-ssh_enumerate('x.x.x.x', user_path) #replace w ulist
+ip_target: str = 'x.x.x.x' #replace w IP
+ssh_enumerate(ip_target, user_path)
