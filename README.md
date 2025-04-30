@@ -16,11 +16,10 @@ This script uses Paramiko to perform username enumeration against an SSH service
 ```bash
 pip install paramiko
 ```
-
 2.	Edit the script to specify:
    
-•	Target IP address
-•	Path to your username wordlist
+• Target IP address
+• Path to your username wordlist
 
 4.	Run it:
 ```
